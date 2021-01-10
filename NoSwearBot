@@ -1,0 +1,66 @@
+import discord
+from replit import db
+
+token="****"
+client = discord.Client()
+print(token)
+
+@client.event 
+async def on_ready():     
+    print(f'{client.user} has connected to Discord!')  
+
+@client.event
+async def on_message(message):
+  if "fuck" in message.content: 
+    await message.delete()
+    await message.channel.send(content = "DONT USE BAD WORDS!")
+  elif "shit" in message.content: 
+    await message.delete()
+    await message.channel.send(content = "DONT USE BAD WORDS!")
+  elif "ass" in message.content: 
+    await message.delete()
+    await message.channel.send(content = "DONT USE BAD WORDS!")
+  elif "dick" in message.content: 
+    await message.delete()
+    await message.channel.send(content = "DONT USE BAD WORDS!")
+  elif "feck" in message.content: 
+    await message.delete()
+    await message.channel.send(content = "DONT USE BAD WORDS!")
+  elif "gago" in message.content: 
+    await message.delete()
+    await message.channel.send(content = "DONT USE BAD WORDS!")
+  elif "gagi" in message.content: 
+    await message.delete()
+    await message.channel.send(content = "DONT USE BAD WORDS!")
+  elif "ampota" in message.content: 
+    await message.delete()
+    await message.channel.send(content = "DONT USE BAD WORDS!")
+  elif "pota" in message.content: 
+    await message.delete()
+    await message.channel.send(content = "DONT USE BAD WORDS!")
+  elif "tangina" in message.content: 
+    await message.delete()
+    await message.channel.send(content = "DONT USE BAD WORDS!")
+  elif "bitch" in message.content: 
+    await message.delete()
+    await message.channel.send(content = "DONT USE BAD WORDS!")
+  elif "biatch" in message.content: 
+    await message.delete()
+    await message.channel.send(content = "DONT USE BAD WORDS!")
+  elif "bastard" in message.content: 
+    await message.delete()
+    await message.channel.send(content = "DONT USE BAD WORDS!")
+  elif "cunt" in message.content: 
+    await message.delete()
+    await message.channel.send(content = "DONT USE BAD WORDS!")
+  elif "damn" in message.content: 
+    await message.delete()
+    await message.channel.send(content = "DONT USE BAD WORDS!")
+  elif "amp" in message.content: 
+    await message.delete()
+    await message.channel.send(content = "DONT USE BAD WORDS!")
+  elif "shet" in message.content: 
+    await message.delete()
+    await message.channel.send(content = "DONT USE BAD WORDS!")
+
+client.run(token)
